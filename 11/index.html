@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Vue.js App</title>
+  <link href="main.css" rel="stylesheet"
+</head>
+<body>
+  <div id="app">
+    <ul>
+      <comp-child v-for="item in list"
+      v-bind:key="item.id"
+      v-bind:name="item.name"
+      v-bind:hp="item.hp"></comp-child>
+    </ul>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
