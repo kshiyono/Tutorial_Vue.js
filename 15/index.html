@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Vue.js App</title>
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <button v-on:click="show=!show"></button>
+    <transition>
+      <div v-if="show" key="a">
+        <img src="standing-2.png">
+      </div>
+      <div v-else key="b">
+        <img src="standing-21.png">
+      </div>
+    </transition>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
